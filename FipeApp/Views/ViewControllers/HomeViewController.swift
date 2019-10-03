@@ -15,7 +15,7 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        view.backgroundColor = .yellow
         
         let service = AppService.getMarcas
         NetworkManager.getAll(service: service) { (marcas: [Marca]?, error) in
